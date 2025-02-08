@@ -5,3 +5,4 @@
 - https://github.com/triton-inference-server/backend/tree/main/examples/backends/recommended
 - https://github.com/vadimkantorov/readaudio
 - https://github.com/speechmatics/ctranslate2_triton_backend
+- https://github.com/aeroheim/audio-file-decoder
