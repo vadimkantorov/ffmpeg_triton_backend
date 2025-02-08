@@ -26,8 +26,8 @@ jobs:
             find server/build/opt
             server/build/opt/tritonserver/bin/tritonserver --model-repository $PWD/recommended_models &
             sleep 30s
-      #      python recommended_client.py
-      #
+            python recommended_client.py
+      
       #- name: Archive artifacts
       #  uses: actions/upload-artifact@v4
       #  with:
