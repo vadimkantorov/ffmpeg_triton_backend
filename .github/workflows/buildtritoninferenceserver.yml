@@ -23,7 +23,8 @@ jobs:
       - name: Test Backend
         run: |
             cp install/backends/recommended/libtriton_recommended.so $PWD/recommended_models/1
-            server/build/opt/tritonserver --model-repository $PWD/recommended_models # &
+            find server/build/opt
+      #      server/build/opt/tritonserver --model-repository $PWD/recommended_models # &
       #      sleep 30s
       #      python recommended_client.py
       #
