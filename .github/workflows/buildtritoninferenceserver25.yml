@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install Prerequisites
-        run:  sudo apt-get update && sudo apt-get install -y git build-essential cmake rapidjson-dev libssl-dev libre2-dev libb64-dev libarchive-dev libnuma-dev # libboost1.83-dev
+        run:  sudo apt-get install -y git build-essential cmake rapidjson-dev libssl-dev libre2-dev libb64-dev libarchive-dev libnuma-dev # libboost1.83-dev
         
       - name: Clone Triton
         run: git clone https://github.com/triton-inference-server/server --branch r24.05 --single-branch --depth 1
