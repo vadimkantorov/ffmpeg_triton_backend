@@ -22,7 +22,7 @@ jobs:
       
       - name: Test Backend
         run: |
-            cp install/backends/recommended/libtriton_recommended.so $PWD/recommended_models/1
+            cp install/backends/recommended/libtriton_recommended.so $PWD/recommended_models/batching/
             find server/build/opt
             server/build/opt/tritonserver/bin/tritonserver --model-repository $PWD/recommended_models &
             sleep 30s
