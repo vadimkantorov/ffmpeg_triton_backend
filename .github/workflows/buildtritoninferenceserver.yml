@@ -24,8 +24,8 @@ jobs:
         run: |
             cp install/backends/recommended/libtriton_recommended.so $PWD/recommended_models/1
             find server/build/opt
-      #      server/build/opt/tritonserver --model-repository $PWD/recommended_models # &
-      #      sleep 30s
+            server/build/opt/tritonserver/bin/tritonserver --model-repository $PWD/recommended_models &
+            sleep 30s
       #      python recommended_client.py
       #
       #- name: Archive artifacts
