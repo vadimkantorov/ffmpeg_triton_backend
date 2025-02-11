@@ -120,6 +120,11 @@ target_link_libraries(
     triton-backend-utils    # from repo-backend
 )
 
+target_link_libraries(
+  triton-recommended-backend 
+  -lavformat -lavcodec -lavfilter -lavutil
+)
+
 if(WIN32)
   set_target_properties(
     triton-recommended-backend PROPERTIES
