@@ -122,7 +122,8 @@ target_link_libraries(
 
 target_link_libraries(
   triton-recommended-backend 
-  avformat avcodec avfilter avutil swresample
+  PRIVATE
+    avformat avcodec avfilter avutil swresample
 )
 
 if(WIN32)
