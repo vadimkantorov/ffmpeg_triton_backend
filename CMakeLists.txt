@@ -122,7 +122,7 @@ target_link_libraries(
 
 target_link_libraries(
   triton-recommended-backend 
-  -lavformat -lavcodec -lavfilter -lavutil
+  avformat avcodec avfilter avutil swresample
 )
 
 if(WIN32)
