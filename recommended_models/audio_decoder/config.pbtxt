@@ -1,0 +1,16 @@
+name: "audio_decoder"
+backend: "custom"
+input [
+  {
+    name: "INPUT_AUDIO"
+    data_type: TYPE_UINT8
+    dims: [ -1 ]
+  }
+]
+output [
+  {
+    name: "OUTPUT_PCM"
+    data_type: TYPE_INT16
+    dims: [ -1 ]
+  }
+]
